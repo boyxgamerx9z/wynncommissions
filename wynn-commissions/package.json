@@ -1,0 +1,10 @@
+{
+  "name": "wynn-commissions",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Commission site for Netlify with artist login, artwork uploads and guest reviews.",
+  "dependencies": {
+    "@netlify/blobs": "^8.1.0"
+  },
+  "engines": { "node": ">=18" }
+}

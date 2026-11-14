@@ -1,0 +1,463 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Wynn's Commissions</title>
+<meta name="description" content="Custom art, keychains, busts, ita bags and more by Wynn. Order, track your commission and leave a review.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@500;700&family=Nunito:wght@500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/styles.css">
+<script src="/theme.js"></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="imp" viewBox="0 0 200 200">
+      <path d="M150 150 C 178 150 188 128 182 112" fill="none" stroke="var(--body)" stroke-width="9" stroke-linecap="round"/>
+      <path d="M182 100 C 170 88 164 104 182 118 C 200 104 194 88 182 100 Z" fill="var(--accent)"/>
+      <path d="M38 84 L52 12 L98 56 Z" fill="var(--body)" stroke="var(--line)" stroke-width="3" stroke-linejoin="round"/>
+      <path d="M52 72 L58 34 L82 56 Z" fill="var(--ear, var(--accent))"/>
+      <path d="M162 84 L148 12 L102 56 Z" fill="var(--body)" stroke="var(--line)" stroke-width="3" stroke-linejoin="round"/>
+      <path d="M148 72 L142 34 L118 56 Z" fill="var(--ear, var(--accent))"/>
+      <ellipse cx="66" cy="172" rx="20" ry="11" fill="var(--body)" stroke="var(--line)" stroke-width="3"/>
+      <ellipse cx="134" cy="172" rx="20" ry="11" fill="var(--body)" stroke="var(--line)" stroke-width="3"/>
+      <ellipse cx="100" cy="115" rx="72" ry="62" fill="var(--body)" stroke="var(--line)" stroke-width="3"/>
+      <ellipse cx="72" cy="112" rx="12" ry="15" fill="#fff"/>
+      <ellipse cx="128" cy="112" rx="12" ry="15" fill="#fff"/>
+      <circle cx="74" cy="115" r="8" fill="#1a1030"/>
+      <circle cx="126" cy="115" r="8" fill="#1a1030"/>
+      <circle cx="77" cy="111" r="3" fill="#fff"/>
+      <circle cx="129" cy="111" r="3" fill="#fff"/>
+      <ellipse cx="48" cy="136" rx="13" ry="8" fill="var(--blush, var(--accent))" opacity=".85"/>
+      <ellipse cx="152" cy="136" rx="13" ry="8" fill="var(--blush, var(--accent))" opacity=".85"/>
+      <path d="M90 133 Q100 143 110 133" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round"/>
+      <path d="M93 138 L97 147 L101 140 Z M99 140 L103 147 L107 136 Z" fill="#fff"/>
+      <path d="M100 68 L104 78 L114 80 L106 86 L108 96 L100 90 L92 96 L94 86 L86 80 L96 78 Z" fill="var(--accent)"/>
+    </symbol>
+    <symbol id="key" viewBox="0 0 120 120">
+      <circle cx="60" cy="20" r="14" fill="none" stroke="var(--accent)" stroke-width="6"/>
+      <path d="M60 34 v16" stroke="var(--accent)" stroke-width="6" stroke-linecap="round"/>
+      <path d="M28 66 Q28 50 44 50 H76 Q92 50 92 66 V88 Q92 110 60 114 Q28 110 28 88 Z" fill="var(--body)" stroke="var(--line)" stroke-width="3"/>
+      <path d="M60 64 l6 12 13 2-10 9 3 13-12-7-12 7 3-13-10-9 13-2z" fill="var(--accent)"/>
+    </symbol>
+    <symbol id="bag" viewBox="0 0 120 120">
+      <path d="M38 40 Q38 8 60 8 Q82 8 82 40" fill="none" stroke="var(--accent)" stroke-width="6" stroke-linecap="round"/>
+      <rect x="18" y="38" width="84" height="74" rx="16" fill="var(--body)" fill-opacity=".28" stroke="var(--line)" stroke-width="4"/>
+      <circle cx="60" cy="74" r="22" fill="var(--body)" stroke="var(--line)" stroke-width="3"/>
+      <circle cx="51" cy="72" r="4" fill="#fff"/><circle cx="69" cy="72" r="4" fill="#fff"/>
+      <path d="M53 83 Q60 89 67 83" stroke="#fff" stroke-width="3" fill="none" stroke-linecap="round"/>
+      <circle cx="30" cy="52" r="6" fill="var(--accent)"/><circle cx="90" cy="100" r="6" fill="var(--accent2, var(--accent))"/>
+    </symbol>
+    <symbol id="heart" viewBox="0 0 100 100"><path d="M50 88 C 8 56 8 20 32 18 C 42 18 48 24 50 30 C 52 24 58 18 68 18 C 92 20 92 56 50 88 Z" fill="var(--hc, #ff7ac8)"/></symbol>
+    <symbol id="spark" viewBox="0 0 100 100"><path d="M50 0 L62 38 L100 50 L62 62 L50 100 L38 62 L0 50 L38 38 Z" fill="var(--hc, #6fc7ff)"/></symbol>
+  </defs>
+</svg>
+
+<div id="stars" aria-hidden="true"></div>
+<div id="snow" aria-hidden="true"></div>
+
+<header class="top">
+  <div class="bar">
+    <a class="logo" href="#/" style="--body:#1b1230;--ear:#ff7ac8;--accent:#ff7ac8;--line:#a77bff;--blush:#ff7ac8">
+      <svg viewBox="0 0 200 200" aria-hidden="true"><use href="#imp"/></svg>
+      <span>Wynn</span>
+    </a>
+    <nav id="nav" class="links" aria-label="Main">
+      <a href="#/menu" data-nav="menu">Menu</a>
+      <a href="#/gallery" data-nav="gallery">Gallery</a>
+      <a href="#/reviews" data-nav="reviews">Reviews</a>
+      <a href="#/track" data-nav="track">Track order</a>
+      <a href="#/suggestions" data-nav="suggestions">Suggestions</a>
+      <a href="#/terms" data-nav="terms">Terms</a>
+      <a href="#/dashboard" data-nav="dashboard" id="navDash" hidden>Dashboard</a>
+      <a class="pill" href="#/order" data-nav="order">Order</a>
+    </nav>
+    <div class="tools">
+      <button class="icon-btn" id="themeBtn" type="button" aria-label="Switch theme"><span id="themeIcon" aria-hidden="true">☾</span></button>
+      <button class="icon-btn" id="musicBtn" type="button" hidden aria-label="Play or pause lofi music"><span aria-hidden="true">♪</span></button>
+      <div class="acct" id="acct">
+        <button class="btn ghost small" id="loginBtn" type="button">Log in</button>
+        <span class="av" id="acctAv" hidden></span>
+        <span class="nm" id="acctName"></span>
+        <span class="role" id="acctRole" hidden></span>
+        <button class="linkbtn" id="logoutBtn" type="button" hidden>Log out</button>
+      </div>
+      <button class="icon-btn burger" id="burger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="nav"><span aria-hidden="true">☰</span></button>
+    </div>
+  </div>
+</header>
+
+<main id="main" class="wrap" tabindex="-1">
+
+  <!-- HOME -->
+  <section class="page" data-page="home" data-title="Wynn's Commissions" hidden>
+    <div class="hero">
+      <div>
+        <div class="status" id="shopStatus"><span class="dot"></span><span id="shopStatusText">Commissions open</span></div>
+        <p class="notice" id="shopNotice" hidden></p>
+        <h1>Hi, I'm Wynn! <span class="grad">Cute &amp; spooky</span> art and crafts made for you</h1>
+        <p class="lead">I can do YCH, couple art, leather and wood keychains, busts, full body and heads. I can also do ita bags and other special requests within reason.</p>
+        <div class="cta-row">
+          <a class="btn primary" href="#/order">Start an order</a>
+          <a class="btn ghost" href="#/menu">See the menu</a>
+        </div>
+      </div>
+      <div class="stage" aria-hidden="true">
+        <div class="ring"></div>
+        <svg class="hero-mascot" viewBox="0 0 200 200" style="--body:#1b1230;--ear:#ff7ac8;--accent:#ff7ac8;--line:#a77bff;--blush:#ff7ac8"><use href="#imp"/></svg>
+        <div class="float" style="--sz:14%;top:6%;left:8%;--t:3s;--dl:0s"><svg viewBox="0 0 100 100" style="--hc:#6fc7ff"><use href="#heart"/></svg></div>
+        <div class="float" style="--sz:10%;top:14%;right:10%;--t:2.6s;--dl:.4s"><svg viewBox="0 0 100 100" style="--hc:#ff7ac8"><use href="#spark"/></svg></div>
+        <div class="float" style="--sz:12%;bottom:12%;left:4%;--t:3.4s;--dl:.8s"><svg viewBox="0 0 100 100" style="--hc:#a77bff"><use href="#spark"/></svg></div>
+        <div class="float" style="--sz:13%;bottom:8%;right:6%;--t:2.9s;--dl:.2s"><svg viewBox="0 0 100 100" style="--hc:#a77bff"><use href="#heart"/></svg></div>
+      </div>
+    </div>
+
+    <div class="ticker" aria-hidden="true">
+      <div class="track">
+        <span>✦ YCH</span><span>♡ couple art</span><span>✦ leather keychains</span><span>♡ wood keychains</span><span>✦ busts</span><span>♡ full body</span><span>✦ heads</span><span>♡ ita bags</span>
+        <span>✦ YCH</span><span>♡ couple art</span><span>✦ leather keychains</span><span>♡ wood keychains</span><span>✦ busts</span><span>♡ full body</span><span>✦ heads</span><span>♡ ita bags</span>
+      </div>
+    </div>
+
+    <h2 class="title">What I can <em>make</em></h2>
+    <div class="makes" id="makes"></div>
+
+    <h2 class="title">Find your way <em>around</em></h2>
+    <div class="quick">
+      <a class="qcard" href="#/gallery"><b>Gallery</b><span>See my latest work</span></a>
+      <a class="qcard" href="#/track"><b>Track my order</b><span>Check progress and shipping</span></a>
+      <a class="qcard" href="#/reviews"><b>Reviews</b><span>Kind words from clients</span></a>
+      <a class="qcard" href="#/suggestions"><b>Suggestion box</b><span>Tell me what to make next</span></a>
+    </div>
+  </section>
+
+  <!-- MENU -->
+  <section class="page" data-page="menu" data-title="Menu and prices" hidden>
+    <span class="eyebrow">Menu</span>
+    <h1 class="title">Pick your <em>treat</em></h1>
+    <p class="lead">Everything is made by hand and shipped to you or handed over at a station. Station meetups are only in the Houston, Pearland and Galveston area.</p>
+    <div class="cards" id="menuGrid"></div>
+    <h2 class="sub">Add-ons</h2>
+    <div class="addons" id="addons"></div>
+    <div class="cta-row"><a class="btn primary" href="#/order">Start an order</a><a class="btn ghost" href="#/terms">Read the terms</a></div>
+  </section>
+
+  <!-- GALLERY -->
+  <section class="page" data-page="gallery" data-title="Gallery" hidden>
+    <span class="eyebrow">Gallery</span>
+    <h1 class="title">Some <em>cuties</em> I've made</h1>
+    <p class="lead" id="galLead">Sample pieces for now. My own artwork appears here as soon as it is uploaded.</p>
+
+    <div class="uploader" id="uploader" hidden>
+      <h2 class="sub">Add new artwork</h2>
+      <div>
+        <img class="prev" id="artPrev" alt="Preview of the chosen image" hidden>
+        <div class="prevbox" id="artBox">Preview shows here</div>
+      </div>
+      <div class="fields">
+        <label for="artFile">Image file (PNG, JPG, GIF or WebP). Big images are shrunk for you.<input id="artFile" type="file" accept="image/png,image/jpeg,image/gif,image/webp"></label>
+        <div class="row2">
+          <label for="artTitle">Title<input id="artTitle" type="text" maxlength="60" placeholder="Night Imp"></label>
+          <label for="artKind">Type<select id="artKind"></select></label>
+        </div>
+        <div class="rowbtns"><button class="btn primary" id="artUp" type="button">Upload to gallery</button><span class="msg" id="upMsg" role="status"></span></div>
+      </div>
+    </div>
+
+    <div class="chips" id="galFilters" role="group" aria-label="Filter the gallery"></div>
+    <div class="gallery" id="galleryGrid"></div>
+  </section>
+
+  <!-- REVIEWS -->
+  <section class="page" data-page="reviews" data-title="Reviews" hidden>
+    <span class="eyebrow">Reviews</span>
+    <h1 class="title">Kind words from <em>happy clients</em></h1>
+    <p class="lead">Create a free account to leave one review. You can edit or remove it any time.</p>
+    <div class="rvtop">
+      <div class="sum">
+        <div class="big" id="rvAvg">–</div>
+        <div class="stars" id="rvStars" aria-hidden="true">☆☆☆☆☆</div>
+        <div class="cnt" id="rvCount">No reviews yet</div>
+      </div>
+      <div class="rvform">
+        <div class="gate" id="rvGate"><p id="rvGateText">Log in or create an account to leave a review.</p><button class="btn primary small" id="rvLogin" type="button">Log in or sign up</button></div>
+        <form id="rvForm" hidden>
+          <div>
+            <span class="flabel">Your rating</span>
+            <div class="picker" id="rvPick" role="group" aria-label="Star rating">
+              <button type="button" class="sb" data-n="1" aria-label="1 star" aria-pressed="false">★</button>
+              <button type="button" class="sb" data-n="2" aria-label="2 stars" aria-pressed="false">★</button>
+              <button type="button" class="sb" data-n="3" aria-label="3 stars" aria-pressed="false">★</button>
+              <button type="button" class="sb" data-n="4" aria-label="4 stars" aria-pressed="false">★</button>
+              <button type="button" class="sb" data-n="5" aria-label="5 stars" aria-pressed="false">★</button>
+            </div>
+          </div>
+          <label for="rvText">Your review<textarea id="rvText" maxlength="600" placeholder="What was it like to work together?"></textarea></label>
+          <div class="rowbtns">
+            <button class="btn primary" id="rvSend" type="submit">Post review</button>
+            <button class="linkbtn" id="rvRemove" type="button" hidden>Remove my review</button>
+            <span class="msg" id="rvMsg" role="status"></span>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="rvlist" id="rvList"><p class="empty">Loading reviews...</p></div>
+  </section>
+
+  <!-- ORDER -->
+  <section class="page" data-page="order" data-title="Start an order" hidden>
+    <span class="eyebrow">Order form</span>
+    <h1 class="title">Let's make <em>something cute</em></h1>
+    <p class="lead">Send me your idea and I will reply with a quote. Nothing is charged until we agree on the details.</p>
+    <form id="orderForm" class="stack" novalidate>
+      <fieldset>
+        <legend>About you</legend>
+        <div class="row2">
+          <label for="oName">Your name<input id="oName" type="text" maxlength="60" autocomplete="name" required></label>
+          <label for="oEmail">Email<input id="oEmail" type="email" maxlength="254" autocomplete="email" required></label>
+        </div>
+        <label for="oHandle">Discord or Instagram (optional)<input id="oHandle" type="text" maxlength="60" placeholder="@yourname"></label>
+      </fieldset>
+
+      <fieldset>
+        <legend>What would you like?</legend>
+        <div class="row2">
+          <label for="oType">Commission type<select id="oType"></select></label>
+          <label for="oChars">How many characters?<input id="oChars" type="number" min="1" max="10" value="1"></label>
+        </div>
+        <p class="hint" id="oTypeHint" hidden></p>
+        <label for="oDetails">Tell me about it<textarea id="oDetails" maxlength="2000" placeholder="Colors, outfit, mood, size, anything that matters to you" required></textarea></label>
+        <label for="oRefs">Reference links (optional)<textarea id="oRefs" maxlength="1000" rows="2" placeholder="Paste links to pictures of your character"></textarea></label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Where should I send your art?</legend>
+        <div class="choices" role="radiogroup" aria-label="Delivery method">
+          <label class="choice" for="dMail"><input type="radio" name="dm" id="dMail" value="mail"><span><b>Mail it to me</b><small>I ship it to your address</small></span></label>
+          <label class="choice" for="dStation"><input type="radio" name="dm" id="dStation" value="station"><span><b>Meet at a station</b><small>Houston, Pearland or Galveston area only</small></span></label>
+          <label class="choice" for="dDigital"><input type="radio" name="dm" id="dDigital" value="digital"><span><b>Digital copy</b><small>I email a scan or photo of your piece</small></span></label>
+        </div>
+        <div class="pane" id="paneMail" hidden>
+          <label for="aName">Full name on the package<input id="aName" type="text" maxlength="80" autocomplete="name"></label>
+          <label for="aLine1">Street address<input id="aLine1" type="text" maxlength="120" autocomplete="address-line1"></label>
+          <label for="aLine2">Apartment, suite or unit (optional)<input id="aLine2" type="text" maxlength="120" autocomplete="address-line2"></label>
+          <div class="row3">
+            <label for="aCity">City<input id="aCity" type="text" maxlength="80" autocomplete="address-level2"></label>
+            <label for="aRegion">State or region<input id="aRegion" type="text" maxlength="80" autocomplete="address-level1"></label>
+            <label for="aPostal">Postal code<input id="aPostal" type="text" maxlength="20" autocomplete="postal-code"></label>
+          </div>
+          <label for="aCountry">Country<input id="aCountry" type="text" maxlength="60" autocomplete="country-name" value="United States"></label>
+        </div>
+        <div class="pane" id="paneDigital" hidden>
+          <p class="hint">My art is not made digitally. I will email a scan or photo of the finished piece to the address above. Digital copies are only for art pieces, not keychains or ita bags.</p>
+        </div>
+        <div class="pane" id="paneStation" hidden>
+          <label for="sName">Station name and exit<input id="sName" type="text" maxlength="120" placeholder="Example: Union Station, main hall"></label>
+          <label for="sNote">Preferred day and time (optional)<input id="sNote" type="text" maxlength="200" placeholder="Example: Saturday afternoon"></label>
+          <p class="hint"><b>Station meetups are only available in the Houston, Pearland and Galveston area.</b> I cannot travel farther than that. Outside that area, please choose mail. I will confirm the day and time with you by email.</p>
+        </div>
+      </fieldset>
+
+      <label class="check" for="oAgree"><input type="checkbox" id="oAgree"><span>I have read and agree to the <a href="#/terms">terms of service</a>.</span></label>
+      <div class="rowbtns"><button class="btn primary" id="oSend" type="submit">Send my request</button><span class="msg" id="oMsg" role="alert"></span></div>
+    </form>
+
+    <div class="done" id="orderDone" hidden>
+      <h2 class="sub">Request sent!</h2>
+      <p>Your order ID is</p>
+      <div class="oid" id="doneId"></div>
+      <div class="rowbtns"><button class="btn ghost small" id="doneCopy" type="button">Copy ID</button><a class="btn primary small" id="doneTrack" href="#/track">Track this order</a></div>
+      <p class="hint">Keep this ID. You will need it with your email to check progress and shipping on the Track page. I will email you a quote and payment details soon.</p>
+      <div id="doneReturn" hidden></div>
+      <button class="linkbtn" id="doneAgain" type="button">Send another request</button>
+    </div>
+  </section>
+
+  <!-- TRACK -->
+  <section class="page" data-page="track" data-title="Track an order" hidden>
+    <span class="eyebrow">Order tracking</span>
+    <h1 class="title">Where is <em>my order</em>?</h1>
+    <p class="lead">Enter the order ID from your confirmation and the email you used.</p>
+    <div class="mine" id="myOrders" hidden>
+      <h2 class="sub">Your orders</h2>
+      <div class="chips" id="myOrdersList"></div>
+    </div>
+    <form id="trackForm" class="inline-form">
+      <label for="tId">Order ID<input id="tId" type="text" maxlength="12" placeholder="WN-ABC234" autocapitalize="characters" required></label>
+      <label for="tEmail">Email<input id="tEmail" type="email" maxlength="254" placeholder="you@example.com" required></label>
+      <button class="btn primary" id="tGo" type="submit">Check order</button>
+    </form>
+    <div class="msg" id="tMsg" role="alert"></div>
+    <div class="result" id="trackResult" hidden></div>
+  </section>
+
+  <!-- SUGGESTIONS -->
+  <section class="page" data-page="suggestions" data-title="Suggestion box" hidden>
+    <span class="eyebrow">Suggestion box</span>
+    <h1 class="title">Got an <em>idea</em>?</h1>
+    <p class="lead">Tell me what to make next, what to change on the site, or anything else. I read every note. You can stay anonymous.</p>
+    <form id="sugForm" class="stack narrow" novalidate>
+      <label for="sKind">What is it about?<select id="sKind"><option>Art idea</option><option>Website</option><option>Prices or menu</option><option>Something else</option></select></label>
+      <label for="sText">Your suggestion<textarea id="sText" maxlength="1000" placeholder="Write it here" required></textarea></label>
+      <label for="sFrom">Your name (optional)<input id="sFrom" type="text" maxlength="40"></label>
+      <div class="rowbtns"><button class="btn primary" id="sSend" type="submit">Drop it in the box</button><span class="msg" id="sMsg" role="status"></span></div>
+    </form>
+  </section>
+
+  <!-- TERMS -->
+  <section class="page" data-page="terms" data-title="Terms of service" hidden>
+    <span class="eyebrow">Terms of service and policies</span>
+    <h1 class="title">Please read <em>before ordering</em></h1>
+    <p class="lead">By sending a request or paying a deposit, you agree to everything below. Tap a topic to open it.</p>
+    <div class="pay">
+      <div class="pay-card"><span class="ico">P</span><div><h2>PayPal</h2><p id="payPaypal">Details are sent with your quote.</p></div></div>
+      <div class="pay-card"><span class="ico">$</span><div><h2>Cash App</h2><p id="payCash">Details are sent with your quote.</p></div></div>
+    </div>
+    <p class="note">PayPal and Cash App are the only accepted payment methods. Never pay anyone who messages you from a different account claiming to be me.</p>
+
+    <div class="terms">
+      <details open><summary>Payments and deposits</summary><div class="body"><ul>
+        <li>I accept PayPal and Cash App only. No checks, gift cards, crypto or trades.</li>
+        <li>All prices are in US dollars. I send a quote first.</li>
+        <li>Work starts after I receive a 50% deposit. The other 50% is due before I send or ship the final piece.</li>
+        <li>You cover any payment fees or currency conversion charges.</li>
+        <li>Payments must come from an account in your own name or one you are allowed to use.</li>
+      </ul></div></details>
+      <details><summary>Shipping, tracking and returns</summary><div class="body"><ul>
+        <li>Physical items (keychains, ita bags and prints) ship after the final payment clears. Shipping costs are added to your quote.</li>
+        <li>Every shipped order gets a tracking number. It shows on the Track page as soon as I add it.</li>
+        <li>You are responsible for giving me a correct address. I cannot refund a package that was delivered to the address you gave me.</li>
+        <li>If a package is lost or damaged in transit, tell me within 14 days of the delivery date and I will work with you and the carrier to fix it.</li>
+        <li>Handmade items vary slightly from photos. Wood grain and leather tone are always a little different.</li>
+        <li>To return something, message me first. After you verify your order on the Track page, you will see my return address there. Items sent back without contacting me first may not be accepted.</li>
+      </ul></div></details>
+      <details><summary>Station meetups</summary><div class="body"><ul>
+        <li>Meetups are only available within the Houston, Pearland and Galveston area. I cannot travel farther than that, so please choose mail if you are outside it.</li>
+        <li>I confirm the station, day and time with you by email before we meet.</li>
+        <li>We meet in a busy public place. Please do not share a private address for meetups.</li>
+        <li>If we miss each other, I can ship the item instead. Shipping costs are added.</li>
+      </ul></div></details>
+      <details><summary>Refunds and cancellations</summary><div class="body"><ul>
+        <li>Before I start the sketch or materials: full refund of your deposit.</li>
+        <li>After the sketch is approved or materials are cut: the deposit is non-refundable.</li>
+        <li>After line art, coloring or crafting is underway: no refunds, though I may offer a partial one.</li>
+        <li>If I have to cancel for any reason, you get a full refund of everything you paid.</li>
+        <li>Finished and delivered work is not refundable.</li>
+      </ul></div></details>
+      <details><summary>Chargebacks and disputes</summary><div class="body"><p>Please message me first if something is wrong, and I will work with you to fix it. Opening a chargeback or payment dispute after receiving finished work is a breach of these terms. I may share proof of the order, progress shots, tracking and delivered files with the payment provider, and I will not offer further commissions to you.</p></div></details>
+      <details><summary>Revisions and changes</summary><div class="body"><ul>
+        <li>Drawn art: unlimited changes at the sketch stage and 2 small changes at the color stage.</li>
+        <li>Handmade items: changes are only possible before I cut or stamp the material.</li>
+        <li>Big changes after approval, like a new pose, outfit or design, are charged as a new commission or an extra fee.</li>
+        <li>I fix my own mistakes for free at any stage.</li>
+      </ul></div></details>
+      <details><summary>Turnaround and communication</summary><div class="body"><ul>
+        <li>The times on the menu are estimates and start after your deposit clears.</li>
+        <li>Rush orders cost 25% extra and depend on my schedule.</li>
+        <li>I reply within 48 hours. If you go quiet for 14 days, I may pause or close your order and the deposit stays with me.</li>
+        <li>I will tell you if life gets in the way and your piece will be late.</li>
+      </ul></div></details>
+      <details><summary>Usage rights and credit</summary><div class="body"><ul>
+        <li>You may use your commission for personal use, like profile pictures, wallpapers and posting online with credit.</li>
+        <li>Commercial use, such as merch, ads, books, games or streams that earn money, needs a commercial license. Ask me for a quote.</li>
+        <li>I keep the copyright to every piece. You own your characters and designs.</li>
+        <li>Do not resell, trace, edit, redistribute or claim my art as your own. Please credit me when you post it.</li>
+        <li>Do not use my art for NFTs, crypto, or to train or prompt any AI model.</li>
+      </ul></div></details>
+      <details><summary>Portfolio and sharing</summary><div class="body"><p>I may post your finished piece and work-in-progress images on my portfolio, social media and in promo. Tell me before I start if you want it kept private. Private orders may cost a little extra. I never share your personal details.</p></div></details>
+      <details><summary>What I make and what I do not</summary><div class="body"><ul>
+        <li>I make original characters, OCs and fursonas, cute and spooky designs, couples, friends and pets, and fan art of characters that are free to use.</li>
+        <li>I may turn down any request without giving a reason.</li>
+        <li>I do not make hateful, discriminatory, graphic, explicit or illegal content, or anything involving real people in harmful ways.</li>
+        <li>You must have permission to use any reference images you send.</li>
+        <li>Please be kind. Harassment, pressure or abusive messages will end the order with no refund.</li>
+      </ul></div></details>
+      <details><summary>Privacy</summary><div class="body"><p>I only collect the name, email, address or station and payment details needed to complete your order. I do not sell or share them, except with the payment provider and the shipping carrier. Addresses are only visible to me. I keep order records for tax purposes and delete personal details when they are no longer needed.</p></div></details>
+    </div>
+    <p class="updated">Last updated November 2026. I may change these terms. The version posted when you pay your deposit is the one that applies to your order.</p>
+  </section>
+
+  <!-- DASHBOARD (artist only) -->
+  <section class="page" data-page="dashboard" data-title="Dashboard" hidden>
+    <span class="eyebrow">Artist dashboard</span>
+    <h1 class="title">Welcome back, <em id="dashName">Wynn</em></h1>
+    <div class="tabs" role="tablist" id="dashTabs">
+      <button type="button" role="tab" class="tab on" data-tab="orders" aria-selected="true">Orders <span class="count" id="cOrders"></span></button>
+      <button type="button" role="tab" class="tab" data-tab="sug" aria-selected="false">Suggestions <span class="count" id="cSug"></span></button>
+      <button type="button" role="tab" class="tab" data-tab="settings" aria-selected="false">Shop settings</button>
+    </div>
+
+    <div id="tabOrders">
+      <div class="rowbtns"><label for="oFilter" class="inl">Show<select id="oFilter"><option value="open">Open orders</option><option value="all">All orders</option><option value="done">Finished or cancelled</option></select></label></div>
+      <div class="dlist" id="dashOrders"></div>
+    </div>
+    <div id="tabSug" hidden><div class="dlist" id="dashSug"></div></div>
+    <div id="tabSettings" hidden>
+      <form id="setForm" class="stack narrow" novalidate>
+        <label class="check" for="stOpen"><input type="checkbox" id="stOpen"><span>Commissions are open</span></label>
+        <div class="row2">
+          <label for="stTotal">Total slots<input id="stTotal" type="number" min="0" max="99"></label>
+          <p class="hint" id="stTaken">Open slots update by themselves as orders come in. An order holds a slot until you mark it delivered or cancelled.</p>
+        </div>
+        <label for="stNotice">Notice on the home page (optional)<input id="stNotice" type="text" maxlength="200" placeholder="Example: Holiday keychains ship by Dec 15"></label>
+        <div class="row2">
+          <label for="stPaypal">PayPal link or email<input id="stPaypal" type="text" maxlength="80" placeholder="paypal.me/yourname"></label>
+          <label for="stCash">Cash App tag<input id="stCash" type="text" maxlength="40" placeholder="$yourcashtag"></label>
+        </div>
+        <label for="stReturn">Return address (shown only to customers who check their order)<textarea id="stReturn" maxlength="400" rows="4" placeholder="Wynn&#10;123 Candy Lane&#10;City, ST 12345"></textarea></label>
+        <div class="rowbtns"><button class="btn primary" id="stSave" type="submit">Save settings</button><span class="msg" id="stMsg" role="status"></span></div>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <span>© 2026 Wynn · All characters belong to their owners</span>
+  <span class="flinks"><a href="#/terms">Terms</a><a href="#/suggestions">Suggestion box</a><a href="#/track">Track an order</a></span>
+</footer>
+
+<dialog id="authDlg" class="dlg" aria-labelledby="authTitle">
+  <div class="tabs" role="tablist">
+    <button type="button" role="tab" class="tab on" id="tabLogin" aria-selected="true">Log in</button>
+    <button type="button" role="tab" class="tab" id="tabSignup" aria-selected="false">Create account</button>
+  </div>
+  <h2 id="authTitle">Welcome back</h2>
+  <form id="authForm" novalidate>
+    <label for="auName" id="auNameWrap" hidden>Your name<input id="auName" type="text" maxlength="40" autocomplete="name" placeholder="Luna"></label>
+    <label for="auLogin" id="auLoginLabel">Username or email<input id="auLogin" type="text" autocomplete="username" placeholder="you@example.com" required></label>
+    <label for="auPass">Password<input id="auPass" type="password" autocomplete="current-password" required></label>
+    <div class="msg" id="auMsg" role="alert"></div>
+    <div class="rowbtns">
+      <button class="btn primary" id="auGo" type="submit">Log in</button>
+      <button class="btn ghost small" id="auClose" type="button">Cancel</button>
+    </div>
+  </form>
+</dialog>
+
+<dialog id="lightbox" class="dlg lb" aria-label="Artwork viewer">
+  <img id="lbImg" alt="">
+  <div class="lbcap"><span id="lbCap"></span><button class="btn ghost small" id="lbClose" type="button">Close</button></div>
+</dialog>
+
+<aside id="player" class="player" aria-label="Lofi music player" hidden>
+  <div class="pbar">
+    <button class="pplay" id="pPlay" type="button" aria-label="Play music">&#9654;</button>
+    <div class="pinfo"><b id="pTitle">Lofi</b><span id="pSub"></span></div>
+    <button class="pnext" id="pNext" type="button" aria-label="Next track">&#9197;</button>
+    <label class="vol" for="pVol"><span class="sr">Volume</span><input id="pVol" type="range" min="0" max="100" value="50"></label>
+    <button class="pstop" id="pClose" type="button" aria-label="Close music bar">&times;</button>
+  </div>
+</aside>
+
+<div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+
+<script src="/menu.js"></script>
+<script src="/deco.js" defer></script>
+<script src="/music.js" defer></script>
+<script src="/app.js" defer></script>
+</body>
+</html>
